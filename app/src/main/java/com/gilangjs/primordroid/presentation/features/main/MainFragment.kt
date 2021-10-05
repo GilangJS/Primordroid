@@ -5,13 +5,19 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.ViewModelProvider
+import androidx.viewbinding.ViewBinding
 import com.gilangjs.primordroid.R
+import com.gilangjs.primordroid.databinding.MainFragmentBinding
 import com.gilangjs.primordroid.presentation.BaseFragment
 
 class MainFragment : BaseFragment() {
 
     private val viewModel: MainViewModel by viewModels()
+    private val binding get() = getBinding<MainFragmentBinding>()
+
+    override fun initBinding(view: View): MainFragmentBinding {
+        return MainFragmentBinding.bind(view)
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
