@@ -9,7 +9,9 @@ import androidx.viewbinding.ViewBinding
 import com.gilangjs.primordroid.R
 import com.gilangjs.primordroid.databinding.MainFragmentBinding
 import com.gilangjs.primordroid.presentation.BaseFragment
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainFragment : BaseFragment() {
 
     private val viewModel: MainViewModel by viewModels()

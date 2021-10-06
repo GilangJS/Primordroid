@@ -3,7 +3,9 @@ package com.gilangjs.primordroid.presentation.features.main
 import android.os.Bundle
 import com.gilangjs.primordroid.R
 import com.gilangjs.primordroid.presentation.BaseActivity
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
